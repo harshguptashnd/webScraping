@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 search = input('Enter search term:')
-params ={'q':search}
-r = requests.get('http://www.bing.com/search',params=params)
+parameters ={'q':search}
+r = requests.get('http://www.bing.com/search',params=parameters)
 
 soup = BeautifulSoup(r.text,'html.parser')
 results = soup.find('ol',{'id':'b_results'})
