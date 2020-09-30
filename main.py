@@ -26,4 +26,4 @@ for item in links:
         print('next sibling is:',children1.next_sibling)
 print(soup.prettify())
 
-
+# END 
